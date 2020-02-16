@@ -9,10 +9,11 @@ This document is a guide for [hole](http://holenat.net) users to use hole export
 
 - <a href="#download">Download & Install</a>
 - <a href="#configuration">Configuration</a>
-- <a href="#http">Export local http server</a>
-- <a href="#https">Export local https server</a>
-- <a href="#grpc">Export local grpc serve</a>
-- <a href="#tcp">Export local tcp server</a>
+- <a href="#export">Export local servers</a>
+    - <a href="#http">Export local http server</a>
+    - <a href="#https">Export local https server</a>
+    - <a href="#grpc">Export local grpc serve</a>
+    - <a href="#tcp">Export local tcp server</a>
 
 - <a href="">Pay plan</a>
 
@@ -127,6 +128,9 @@ Welcome for Hole nat service
 ```
 
 close the window after config.
+
+## export local servers
+currently, we support http, https, grpc, tcp protocol for you. http and https use 80,443 port for all users. for grpc, we provide a static port 880.
 
 ### <a href="" id="http">Export local HTTP server</a>
 
