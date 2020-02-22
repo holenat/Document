@@ -21,7 +21,7 @@ This document is a guide for [hole](http://holenat.net) users to use hole export
 
 **Use hole in two minutes**
 
-[![asciicast](https://asciinema.org/a/303765.svg)](https://asciinema.org/a/303765)
+[![asciicast](images/play.svg)](https://asciinema.org/a/303765)
 
 Firstly, register in our [website](http://holenat.net/console). We provide a authtoken for users. If you have account, please [login](http://holenat.net/console)
 
