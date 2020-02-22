@@ -15,7 +15,7 @@ This document is a guide for [hole](http://holenat.net) users to use hole export
     - <a href="#grpc">Export local grpc serve</a>
     - <a href="#tcp">Export local tcp server</a>
 
-- <a href="">Pay plan</a>
+- <a href="#about">About</a>
 
 ### <a id="quic" href="">Quick start</a>
 
@@ -190,16 +190,51 @@ success !!!
 
 
 ### <a href="" id="#grpc">Export local GRPC server</a>
+For new version of hole, we support grpc, grpc is as easy as http,https, but we provide another port 880 for it.
+
+```
+➜  ~ hole -http 80 -grpc 9091
+Hole Nat By ICKelin
+status    	 connected
+AuthorizeToken	 yDJxBwNvQOeA4pvuK46SGQ==
+Username  	 yingjiu
+Domain    	 yingjiu.v.holenat.net
+Time left 	 9 days 23 hours 56 minutes
+Lantancy  	 14ms
+
+Forwarding table:
+=============================================================
+01. grpc://yingjiu.v.holenat.net => 127.0.0.1:9091
+02. http://yingjiu.v.holenat.net => 127.0.0.1:80
+
+```
+
 
 ### <a href="" id="#grpc">Export local TCP servers</a>
+If http, https and grpc are not enough for you, for example, ssh, windows remote desktop you want, tha you need to use tcp ports.
 
-### Paying plan
+we provide a public ip and random tcp port for you, we support at most 10 tcp ports for each user.
 
-**for unregister client**
-for unregister client, you can use hole, but the domain is random since that we use username to generate domain, unregister means that there is no username in our database.
+If you want to use tcp, the tcp options is required.
 
-**for register user**
-for register user, we support 5 days for trying and we generate the unique domain for you using username. so the domain may likes $username.v.holenat.net
+```
+➜  ~ hole -http 80 -grpc 9091 -tcp 22,3389
+Hole Nat By ICKelin
+status    	 connected
+AuthorizeToken	 yDJxBwNvQOeA4pvuK46SGQ==
+Username  	 yingjiu
+Domain    	 yingjiu.v.holenat.net
+Time left 	 9 days 23 hours 52 minutes
+Lantancy  	 14ms
 
-**for paying user**
-for paying user, we support http, https, grpc, tcp tranverse, the max tcp port is 10, you can config 10 tcp ports. also the newfeature will free for paying user first.
+Forwarding table:
+=============================================================
+01. grpc://yingjiu.v.holenat.net => 127.0.0.1:9091
+02. http://yingjiu.v.holenat.net => 127.0.0.1:80
+03. tcp://yingjiu.v.holenat.net:10000 => 127.0.0.1:22
+04. tcp://yingjiu.v.holenat.net:10001 => 127.0.0.1:3389
+
+```
+
+### <a href="" id="about">About</a>
+hole nat team provide nat traversal, vpn and sdwan service, our goal is to save developer and employee's time. 
