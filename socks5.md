@@ -1,7 +1,7 @@
 ## Using hole to visit websites in your office
 The COVID-19 makes some employees in china work at home, what if they want to use gitlab, ERP or anyother website in there office LAN. some big companies use VPN, but its too expensive for startups. The hole provide a solution that may help, use our NAT traversal services to export your local [socks server](https://github.com/holenat/holesocks), anyone else configure socks proxy with authization could access to your office system.
 
-![](http://www.holenat.net/img/showcase-sock5.jpg)
+![](images/showcase-sock5.jpg)
 
 ### Step by step
 
