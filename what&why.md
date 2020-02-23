@@ -16,12 +16,16 @@ A ping B: ping 192.168.10.3
 
 the VPN use layer2 or layer3 forward to make this possible, more about [VPN tunnel](https://github.com/ICKelin/gtun)
 
+![vpn](images/vpn.jpg)
+
 so, how to use VPN to do nat traversal, there are two ways.
 
 **1. everyone want to access in the server should run clients, and use virtual IP to visit each other.**
 
 Its safe enough, and every nodes running vpn clients can access the all the nodes in the virtual network. 
 The disadvantage is that the vpn client is difficult to develop, you may be need to develop Android,IOS,macOS,windows,linux platforms clients, this may need a big team.
+
+if you want some opensource project about this, [opennotr](https://github.com/ICKelin/opennotr) may help.
 
 **2. Use VPN server**
 
