@@ -31,7 +31,7 @@ if you want some opensource project about this, [opennotr](https://github.com/IC
 
 we use VPN server as a public server, the SERVER could access all the clients. for example, if you need to access a clients website, you can use nginx's upstream to proxy to A(192.168.10.2)
 
-![](http://www.holenat.net/img/showcase-http.jpg)
+![](images/showcase-http.jpg)
 
 ```
 server {
