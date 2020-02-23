@@ -19,7 +19,7 @@ This document is a guide for [hole](http://holenat.net) users to use hole export
 
 ### <a id="quic" href="">Quick start</a>
 
-**Use hole in two minutes**
+**Use hole in two minutes
 
 [![asciicast](images/play.svg)](https://asciinema.org/a/303765)
 
