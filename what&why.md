@@ -7,7 +7,9 @@ The VPN technology is a major method to do NAT traversal
 VPN makes computers that running VPN clients can visit each other, for example, there are two clients A, B and a SERVER, they will have three virtual ip address 
 
 SERVER: 192.168.10.1
+
 A: 192.168.10.2
+
 B: 192.168.10.3
 
 A ping B: ping 192.168.10.3
@@ -17,10 +19,12 @@ the VPN use layer2 or layer3 forward to make this possible, more about [VPN tunn
 so, how to use VPN to do nat traversal, there are two ways.
 
 **1. everyone want to access in the server should run clients, and use virtual IP to visit each other.**
+
 Its safe enough, and every nodes running vpn clients can access the all the nodes in the virtual network. 
 The disadvantage is that the vpn client is difficult to develop, you may be need to develop Android,IOS,macOS,windows,linux platforms clients, this may need a big team.
 
 **2. Use VPN server**
+
 we use VPN server as a public server, the SERVER could access all the clients. for example, if you need to access a clients website, you can use nginx's upstream to proxy to A(192.168.10.2)
 
 ![](http://www.holenat.net/img/showcase-http.jpg)
